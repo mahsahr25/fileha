@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+@font-face{
+font-family: "byekan";
+src: url('./font/BYekan-/BYekan/BYekan+.ttf');
+}
+@font-face{
+  font-family: "iran_sans";
+  src: url('./font/A-Iranian-Sans/A-Iranian-Sans/Iranian\ Sans.ttf');
+
+  }
+  @font-face{
+    font-family: "vazir";
+    src: url('./font/vazir-font-v16.1.0/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.ttf');
+  
+    }
+body{
+  font-family: "vazir";
+  /* background-image:url('img/bgedit1.png'); */
+
+}
+.holder {
+    /* background:#ccc; */
+    text-overflow: ellipsis;
+    padding:0.5rem;
+    overflow: hidden;
+    margin: 0;
+    white-space: nowrap;
+
+    
+  }
+  .news {
+    animation : slide 20s linear infinite;
+    color:black;
+    margin: 0;
+    padding:0;
+    /* width:200px; */
+    font-size:1.3em;
+    text-shadow: 10px 0px 10px #D14283;
+
+
+    
+  }
+  .logo {
+    width: 3vw;
+    height: 80%; 
+  }
+  .smalllogo{
+    width: 8vw;
+    height: 80%; 
+  }
+  .adminimg{
+    width: 2.75vw;
+    height: 80%; 
+    border-radius: 50px;
+  }
+  
+  
+    @keyframes slide {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(0%); }
+      }
+
+.top-img{
+    background-image:url('img/bg.jpg');
+    height: 600px;
+    position:relative;
+}
+.imgtext{
+  font-family: "iran_sans";
+    position:absolute;
+    top:20vh;
+    right: 13vw;
+    /* font-size: 7em; */
+    font-size:7vw;
+    color: rgb(255,255,255);
+    animation: floatup 2s forwards;
+    animation: 
+    typing 3.5s steps(0, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* } */
+@keyframes floatup {
+    from {transform: translateY(0px);}
+    to {transform: translateY(-12vh);}
+  }
+
+  .imgtext2{
+    font-family: "iran_sans";
+    position:absolute;
+    top:37vh;
+    right: 25vw;
+    /* font-size: 7em; */
+    font-size:7vw;
+    color: rgb(255,255,255);
+    animation: floatup 2s forwards;
+
+}
+.imgtext3{
+  font-family: "iran_sans";
+    position:absolute;
+    top:56vh;
+    right: 34vw;
+    /* font-size: 7em; */
+    font-size:7vw;
+    color: rgb(255,255,255);
+    animation: floatup 2s forwards;
+
+}
+.uploadtitle{
+  font-size: 2em;
+  background: -webkit-linear-gradient(#cf9faf, #91043c);
+  /* background: -webkit-linear-gradient(#cf9faf, #cf1439); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.uploadparam{
+  background-image: linear-gradient(to left, #a82057, #dc4e64, #e3768b, #e4728e);
+  color:rgb(255,255,255);
+  /* border-radius:10px; */
+  border:none;
+}
+.mainupload { 
+  /* transition: all .2s ease-in-out;  */
+  transition: transform .2s; /* Animation */}
+.mainupload:hover { transform: scale(1.1); }
+.gif{
+  height: 300px;
+}
+/* .mainupload{ */
+  /* margin-right: 30px; */
+/* } */
+.footer{
+  background-color: rgb(50, 74, 100);
+  /* height: 70px; */
+}
+.footer-right{
+  color:rgb(255,255,255);
+  /* height: 50px; */
+}
+.dlimg{
+  height: 10vh;
+}
+.dltext{
+  font-size:1.4em;
+}
+.logintitle{
+  background: -webkit-linear-gradient(#cf9faf, #D14283);
+  /* background: -webkit-linear-gradient(#cf9faf, #cf1439); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.loginbtn{
+  /* background-color: rgb(209, 66, 131); */
+  background-image: linear-gradient(to left, #D14283, #FF7EB7, #e3768b, #e4728e);
+}
+
+
+.overlay{
+  /* display: none; */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgb(134, 97, 97,0.7) url("img/loader4.gif") center no-repeat ;
+}
+/* Turn off scrollbar when body element has the loading class */
+body .loading{
+  overflow: hidden;   
+}
+/* Make spinner image visible when body element has the loading class */
+ body .loading {
+  display: block;
+}
+
+
+@media(max-width:767px){
+  .loginform{
+    margin-bottom:45vh;
+  }
+  /* .footericons{ */
+    /* margin-bottom: 10vh; */
+  /* } */
+  .table{
+    margin-bottom: 30vh;
+  }
+}
