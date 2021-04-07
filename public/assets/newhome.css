@@ -66,34 +66,78 @@ body{
 
 .top-img{
     background-image:url('img/bg.jpg');
-    height: 600px;
-    position:relative;
+    height: 75vh;
+    line-height: 75vh;
+    /* position:relative; */
 }
 .imgtext{
   font-family: "iran_sans";
-    position:absolute;
-    top:20vh;
-    right: 13vw;
+    position:relative;
+    padding-top:50%;
+    /* padding-right: 18vw; */
     /* font-size: 7em; */
-    font-size:7vw;
-    color: rgb(255,255,255);
-    animation: floatup 2s forwards;
-    animation: 
-    typing 3.5s steps(0, end),
-    blink-caret .75s step-end infinite;
+    font-size:11vw;
+    /* color: rgb(255,255,255); */
+    color: transparent;
+
+    /* animation: floatup 2s forwards; */
+    /* animation: flickertext1 2s linear  reverse infinite; */
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+
+
+/*  */
+@keyframes flickertext1 {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opacity: 0.5;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.25;
+  }
+  45% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.85;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
+
+
+
+
+
+
 
 /* } */
 @keyframes floatup {
@@ -103,24 +147,31 @@ body{
 
   .imgtext2{
     font-family: "iran_sans";
-    position:absolute;
-    top:37vh;
-    right: 25vw;
+    /* position:absolute; */
+    /* padding-top:18vh; */
+    padding-right: 25vw;
     /* font-size: 7em; */
     font-size:7vw;
-    color: rgb(255,255,255);
-    animation: floatup 2s forwards;
+    /* color: rgb(255,255,255); */
+    color: transparent;
+    /* animation: floatup 2s forwards; */
+    /* animation: flickertext1 2s linear  reverse infinite; */
+
 
 }
 .imgtext3{
   font-family: "iran_sans";
-    position:absolute;
-    top:56vh;
-    right: 34vw;
+    /* position:absolute; */
+    /* padding-top:18vh; */
+    padding-right: 34vw;
     /* font-size: 7em; */
     font-size:7vw;
-    color: rgb(255,255,255);
-    animation: floatup 2s forwards;
+    /* color: rgb(255,255,255); */
+    color: transparent;
+
+    /* animation: floatup 2s forwards; */
+    /* animation: flickertext1 2s linear  reverse infinite; */
+
 
 }
 .uploadtitle{
@@ -192,6 +243,100 @@ body .loading{
   display: block;
 }
 
+.deconstructed > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: rgb(255,255,255);
+  pointer-events: none;
+}
+
+.deconstructed > div:nth-child(1) {
+  -webkit-mask-image: linear-gradient(rgb(58, 54, 54) 25%, transparent 25%);
+  mask-image: linear-gradient(rgb(65, 59, 59) 25%, transparent 25%);
+  animation: deconstructed1 5s infinite;
+}
+
+.deconstructed > div:nth-child(2) {
+  -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  animation: deconstructed2 5s infinite;
+}
+
+.deconstructed > div:nth-child(3) {
+   -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  animation: deconstructed3 5s infinite;
+}
+
+.deconstructed > div:nth-child(4) {
+   -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+  mask-image: linear-gradient(transparent 75%, black 75%);
+  animation: deconstructed4 5s infinite;
+}
+
+@keyframes deconstructed1 {
+  0% {
+    transform: translateX(100%);
+  }
+  26% {
+    transform: translateX(0%);
+  }
+  83% {
+    transform: translateX(-0.1%);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
+
+@keyframes deconstructed2 {
+  0% {
+    transform: translateX(100%);
+  }
+  24% {
+    transform: translateX(0.5%);
+  }
+  82% {
+    transform: translateX(-0.2%);
+  }
+  100% {
+    transform: translateX(-125%);
+  }
+}
+
+@keyframes deconstructed3 {
+  0% {
+    transform: translateX(100%);
+  }
+  22% {
+    transform: translateX(0%);
+  }
+  81% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-130%);
+  }
+}
+
+@keyframes deconstructed4 {
+  0% {
+    transform: translateX(100%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-135%);
+  }
+}
+
 
 @media(max-width:767px){
   .loginform{
@@ -204,3 +349,8 @@ body .loading{
     margin-bottom: 30vh;
   }
 }
+
+
+
+
+

@@ -121,4 +121,8 @@ class FileController extends Controller
         dispatch(new DeleteFileJob);
         return "successful";
     }
+
+    public function test(){
+        return view('test');
+    }
 }

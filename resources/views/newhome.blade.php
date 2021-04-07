@@ -128,11 +128,28 @@
 <p class="news mt-2">آپلود و دانلود فایل </p>
 </div>
 <!-- end of scroll text -->
-<div class="top-img col-12">
-    <div class="imgtext" id="imgtext">انتقال</div>
-    <div class="imgtext2">امن</div>
-    <div class="imgtext3">فایل</div>
+<div class="top-img col-12 text-center ">
+    <div class="imgtext deconstructed pt-4 align-self-center " id="imgtext "> انتقال امن فایل
+      <div>انتقال امن فایل</div>
+      <div>انتقال امن فایل</div>
+      <div>انتقال امن فایل</div>
+      <div>انتقال امن فایل</div>
+    </div>
+
+    <!-- <div class="imgtext2 ">امن
+    <div>امن</div>
+    <div>امن</div>
+    <div>امن</div>
+    <div>امن</div>
+    </div>
+    <div class="imgtext3 ">فایل
+      <div>فایل</div>
+      <div>فایل</div>
+      <div>فایل</div>
+      <div>فایل</div>
+    </div> -->
 </div>
+
 <div class="container-fluid  mt-4">
 
   <!-- UPLOAD AREA -->
