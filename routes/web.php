@@ -29,7 +29,6 @@ Route::post('/site/uploadfile', [App\Http\Controllers\FileController::class, 'up
 Route::get('/{x}', [App\Http\Controllers\FileController::class, 'downloadfile'])->name('downloadfile');
 Route::get('/site/expire', [App\Http\Controllers\FileController::class, 'expire'])->name('expire');
 Route::get('/site/delete_file', [App\Http\Controllers\FileController::class, 'delete_file'])->name('delete_file');
-Route::get('/site/test', [App\Http\Controllers\FileController::class, 'test'])->name('test');
 Route::get('/site/delete_file_queue', [App\Http\Controllers\FileController::class, 'delete_file_queue'])->name('delete_file_queue');
 
 

@@ -10,6 +10,6 @@
  <i class="fa fa-telegram footer-right mr-1"></i></div>
 </div>
 </div>
-</body>
+<!-- </body>
 
-</html>
+</html> -->

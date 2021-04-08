@@ -63,6 +63,9 @@ body{
         0% { transform: translateX(-100%); }
         100% { transform: translateX(0%); }
       }
+.middlesection{
+  margin-bottom: 20vh;
+}
 
 .top-img{
     background-image:url('img/bg.jpg');
@@ -288,7 +291,7 @@ body .loading{
     transform: translateX(-0.1%);
   }
   100% {
-    transform: translateX(-120%);
+    transform: translateX(-103%);
   }
 }
 
@@ -303,7 +306,7 @@ body .loading{
     transform: translateX(-0.2%);
   }
   100% {
-    transform: translateX(-125%);
+    transform: translateX(-105%);
   }
 }
 
@@ -318,7 +321,7 @@ body .loading{
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-130%);
+    transform: translateX(-107%);
   }
 }
 
@@ -333,7 +336,7 @@ body .loading{
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-135%);
+    transform: translateX(-110%);
   }
 }
 
@@ -348,6 +351,81 @@ body .loading{
   .table{
     margin-bottom: 30vh;
   }
+  .mainupload:hover { transform: scale(1); }
+}
+
+
+.streak {
+  animation: text-shadow 1.5s ease-in-out infinite;
+  /* font-size: 5em; */
+  /* font-weight: 900; */
+  /* line-height: 1; */
+}
+
+/* .streak:hover { */
+  /* animation-play-state: paused; */
+/* } */
+
+
+
+
+
+@keyframes text-shadow {
+  0% {  
+      transform: translateY(0);
+      text-shadow: 
+          0 0 0 #FFFFFF, 
+          0 0 0 #9fa3a3, 
+          0 0 0 #bbb5b5, 
+          0 0 0 #f0efd6;
+  }
+
+  20% {  
+      transform: translateY(-1em);
+      text-shadow: 
+          0 0.125em 0 #FFFFFF, 
+          0 0.25em 0 #9fa3a3, 
+          0 -0.125em 0 #bbb5b5, 
+          0 -0.25em 0 #f0efd6;
+  }
+
+  40% {  
+      transform: translateY(0.5em);
+      text-shadow: 
+          0 -0.0625em 0 #FFFFFF, 
+          0 -0.125em 0 #9fa3a3, 
+          0 0.0625em 0 #bbb5b5, 
+          0 0.125em 0 #f0efd6;
+  }
+  
+ 60% {
+      transform: translateY(-0.25em);
+      text-shadow: 
+          0 0.03125em 0 #FFFFFF, 
+          0 0.0625em 0 #9fa3a3, 
+          0 -0.03125em 0 #bbb5b5, 
+          0 -0.0625em 0 #f0efd6;
+  }
+
+  80% {  
+      transform: translateY(0);
+      text-shadow: 
+          0 0 0 #FFFFFF, 
+          0 0 0 #9fa3a3, 
+          0 0 0 #bbb5b5, 
+          0 0 0 #f0efd6;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.mainlogin{
+  margin-top: 20vh;
 }
 
 

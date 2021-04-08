@@ -44,20 +44,20 @@ class DeleteFileJob implements ShouldQueue
                 "dlremaintime"=>0,
                 "status_id"=>2 //file is wiped
             ]);
-            // $dir=public_path()."/assets/uploads/".$upload->filename;
-            // $shred = new Shred\Shred(3); // $n (optional) <= Number of iterations. Default 3.
+        //     $dir=public_path()."/assets/uploads/".$upload->filename;
+        //     $shred = new Shred\Shred(3); // $n (optional) <= Number of iterations. Default 3.
     
-            // $shred->shred($dir); // <= Overwrite and remove.
-            // // $shred->shred('folder/file.txt', false); // <= Only overwrite.
+        //     $shred->shred($dir); // <= Overwrite and remove.
+        //     // $shred->shred('folder/file.txt', false); // <= Only overwrite.
             
-            // // Check if remove
-            // if ($shred->shred($dir)) {
-            //     // The file is truncated & removed.
-            //     return "yes";
-            // } else {
-            //     // Impossible to overwrite or remove the file. See filepath & file permissions.
-            //     return "no";
-            // }
+        //     // Check if remove
+        //     if ($shred->shred($dir)) {
+        //         // The file is truncated & removed.
+        //         return "yes";
+        //     } else {
+        //         // Impossible to overwrite or remove the file. See filepath & file permissions.
+        //         return "no";
+        //     }
         }   
 
             

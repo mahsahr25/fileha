@@ -47,3 +47,5 @@ $(document).ready(function(){
 </div>
 
 @endsection
+<!-- </body>
+</html> -->

@@ -72,6 +72,10 @@ class FileController extends Controller
     public function downloadfile($x){ 
         //==$x is download id;
     $file=Upload::where('downloadid',$x)->first();
+    if($file==null){
+        return response(view('files.expire',array('expire'=>'فایل مورد نظر شما موجود نیست')));
+
+    }else{
     // ===first find upload time to calculate expire time ====
     $uploadtime=$file->created_at;
     $expiretime=$uploadtime->addDay($file->dltime)->timestamp;
@@ -92,6 +96,7 @@ class FileController extends Controller
              return response(view('files.expire',array('expire'=>'متاسفانه زمان مجاز دانلود این فایل به پایان رسیده است')));
             
     }
+}
     
 
  
@@ -122,7 +127,5 @@ class FileController extends Controller
         return "successful";
     }
 
-    public function test(){
-        return view('test');
-    }
+    
 }

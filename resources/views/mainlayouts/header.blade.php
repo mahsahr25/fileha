@@ -42,11 +42,11 @@
 <img src="{{asset('assets/img/logo/file2.png')}}" alt="" class="logo ">
 </li>
 <li class="nav-item mr-5 active">
-<a  class="nav-link" href="" >خانه</a>
+<a  class="nav-link" href="{{url('/')}}" >خانه</a>
 </li>
 <li class="nav-item mr-3">
 
-<a  class="nav-link" href="{{url('/')}}">تماس با ما</a>
+<a  class="nav-link" href="">تماس با ما</a>
 
 </li>
 </ul>
